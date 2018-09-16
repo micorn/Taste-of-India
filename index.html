@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang = "sv">
+
+<head>
+
+    <title>Taste of India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+
+    <link rel = "stylesheet" type = "text/css" href = "styleForFourth.css">
+    <link rel = "icon" href = "./images/logo.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=OOpen+Sans+Condensed:300">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100" rel="stylesheet"> 
+<!--Google Map Demo CSS-->
+    <link rel="stylesheet" href="/maps/documentation/javascript/cgc/demos.css">
+
+    <!--Created by Moa Strinnö-->
+
+</head>
+
+<body>
+
+    <section id = "homeSec">
+
+        <div class="header">
+          <!--  <div class = "desktopHeaderNavbar">
+                <ul>
+                     <li><a href = "#homeSec">Hem</a></li>
+                     <li><a href = "#menyOptionsSec">Meny</a></li>
+                     <li><a href = "#oppSec">Öppettider</a></li>
+                     <li><a href = "#kontaktSec">Kontakt</a></li>
+                </ul>
+            </div> 
+            *** Will probably not use this,
+            go with sticky bottom nav instead 
+            (the one from mobile version)-->
+
+            <div>
+                <img  id = "logo" src = "./images/logo.png" class = "">
+            </div>
+
+           <!-- <p>Tunagatan 33, Uppsala</p> 
+             ***Not decided if to have this here***-->
+
+        </div>
+
+
+
+        <section id = "navBarSec">
+
+                <div id = "navbar">
+                        <ul>
+                            
+                            <div class = "navBarSpacingDivs">
+                                <li id = "firstNavLi" class = "navBarLi"><a href = "#homeSec">Hem</a></li>
+                            </div>
+                            <div class = "navBarSpacingDivs">
+                                <li class = "navBarLi"><a href = "#menyOptionsSec">Meny</a></li>
+                            </div>
+                            <div class = "navBarSpacingDivs">   
+                                <li class = "navBarLi"><a href = "#oppSec">Öppettider</a></li>
+                            </div>
+                            <div class = "navBarSpacingDivs">
+                                <li class = "navBarLi"><a href = "#kontaktSec">Kontakt</a></li>
+                            </div>
+
+                        </ul>
+                </div>
+
+        </section> <!--Section navBarSec ends-->
+
+        <section class = "imagesSec">
+
+                <img id = "dish1" class = "landscapeDishImg" src = "./images/dish1.jpg">
+                <img id = "dish2"  class = "landscapeDishImg" src = "./images/dish2.jpg">
+               <!--
+                <img id = "dish3"  class = "landscapeDishImg" src = "./images/dish3.jpg">
+                <img id = "dish4"  class = "landscapeDishImg" src = "./images/dish4.jpg">
+                -->
+                
+                <!-- <img class = "verticalDishImg" src = "./images/dish4.jpg">>
+                <img class = "verticalDishImg" src = "./images/dish5.jpg">>
+                *** The second vertical image is not aligning with the other images ***-->
+
+        </section> <!--Section imagesSec ends-->
+
+
+        <div class="content">
+                <section id = "menyOptionsSec">
+
+                    <hr />
+
+                        <nav class = "menyOptionsNav">
+                            <h1>Meny</h1>
+                            <ul class = "menyOptionsUl">
+                                <li class = "menyOptionsLi"><a href = "#avhamntningMenyDiv" id = "avhamntningA" >Avhämntning</a></p>
+                                <li class = "menyOptionsLi"><a href = "#aLaCarteMenyDiv" id = "aLaCarteA">À la carte</a></p>
+                            </ul>
+                        </nav>
+
+                    <hr />
+
+                    <section id ="menySec" class = "contentSec">
+                        <div class = "meny">
+
+                            <!--Below was an attempt at making the meny show up at the right height when clicking "Avhämntning. Made a difference in height but not enough to solve the problem."
+                            <div id = "avhamntningSpaceDiv"></div>
+                            -->
+
+                            <div id = "avhamntningMenyDiv">
+
+                                <div id = "avhamntningSpaceDiv">
+
+                                    <h1>Avhämntning</h1>
+                                    <p class = "yellowP">10% rabatt på angivet pris. Gäller alla rätter.</p>
+
+                                    <h2>Category of dishes</h2>
+
+                                    <h3>Name of dish</h3>
+                                    <p>Description of dish</p>
+                                    <br />
+                                    <p>100 :-</p>
+
+                                    <br />
+
+                                    <h3>Name of dish</h3>
+                                    <p>Description of dish</p>
+                                    <br />
+                                    <p>100 :-</p>
+
+                                    <br />
+
+                                    <h3>Name of dish</h3>
+                                    <p>Description of dish</p>
+                                    <br />
+                                    <p>100 :-</p>
+
+                                    <br />
+
+                                    <h3>Name of dish</h3>
+                                    <p>Description of dish</p>
+                                    <br />
+                                    <p>100 :-</p>
+
+                                    <br />
+
+                                </div>
+
+                            </div>
+
+                            <hr />
+
+                            <div id = "aLaCarteMenyDiv">
+
+                                <h1>À la carte</h1>
+                                <p class = "yellowP">Ris och sallad ingår i alla varmrätter.</p>
+
+                                <hr />
+
+                                <h2>- Förrätter -</h2>
+
+                                <hr />
+
+                                <h3>Papadam</h3>
+                                <p>Två krispiga tunna indiska linsmjölsbröd, serveras med mango chutney. Vegansk, gluten- och mjölkfri.</p>
+                                <br />
+                                <p>29 :-</p>
+
+                                <br />
+
+                                <h3>Vegetarisk / Vegansk Samosa</h3>
+                                <p>Vegetarisk pirog, serveras med mintsås / tamarind chutney</p>
+                                <br />
+                                <p>39 :-</p>
+
+                                <br />
+
+                                <h3>Köttfärssamosa</h3>
+                                <p>Köttfärspirog, serveras med myntasås / chilisås / vitlökssås</p>
+                                <br />
+                                <p>45 :-</p>
+
+                                <br />
+
+                                <h3>Onion Bhaji</h3>
+                                <p>Friterade lökringar, serveras med myntasås / chilisås / vitlökssås</p>
+                                <br />
+                                <p>39 :-</p>
+
+                                <br />
+
+                                <h3>Vegetarisk Pakora</h3>
+                                <p>Friterade blandade grönsaker marinerade med yoghurt och kryddor, serveras med myntasås / chilisås / vitlökssås</p>
+                                <br />
+                                <p>49 :-</p>
+
+                                <br />
+                                <!--
+                                <h3>Jheenga Chaat</h3>
+                                <p>Marinerad och friterad kungsräka, serveras med myntasås och sweet chilisås</p>
+                                <br />
+                                <p>69 :-</p>
+
+                                <br />
+                                -->
+
+                                <h3>Breaded Mozzarella Sticks (2 st)</h3>
+                                <p>Serveras med myntasås / chilisås / vitlökssås</p>
+                                <br />
+                                <p>35 :-</p>
+
+                                <br />
+
+                                <h3>Chili Cheese Nuggets (4 st)</h3>
+                                <p>Serveras med myntasås / chilisås / vitlökssås</p>
+                                <br />
+                                <p>35 :-</p>
+
+                                <br />
+                                
+                                <div id = "tandooriDiv"> <!--When commenting out "tandooriDiv", the yellow borders around all the sections in the website just dissappear...-->
+
+                                <hr />
+
+                                <h2 id = "tandooriHeadline">- Tandoorirätter - </h2><h2 id = "indiskaGrillratter">(Indiska grillrätter)</h2>
+
+                                <hr />
+
+                            </div>
+
+                                <h3>Tandoori Kyckling Sizlar</h3>
+                                <p>Grillade kycklingklubbor - separat sås</p>
+                                <br />
+                                <p>125 :-</p>
+
+                                <br />
+
+                                <h3>Kyckling Tikka Sizlar</h3>
+                                <p>Två olika kryddmarinerade stekta kycklingfléer - separat sås</p>
+                                <br />
+                                <p>129 :-</p>
+
+                                <br />
+
+                                <h3>Vitlökskyckling Tikka Sizlar</h3>
+                                <p>Grillad kycklingfilé marinerad med grön chili och vitlök, serveras med paprika och lök i en varm rykande järnform - separat sås</p>
+                                <br />
+                                <p>129 :-</p>
+
+                                <br />
+
+                                <h3>Lamm Tikka Sizlar</h3>
+                                <p>Grillad lammfilé, serveras med paprika och lök i en varm rykande järnform - separat sås</p>
+                                <br />
+                                <p>169 :-</p>
+
+                                <br />
+
+                                <h3>Kungsräkor Sizlar</h3>
+                                <p>Grillade kungsräkor, serveras med paprika och lök i en varm rykande järnform - separat sås</p>
+                                <br />
+                                <p>189 :-</p>
+
+                                <br />
+
+                                <h3>Mixed Mughlai Sizlar</h3>
+                                <p>Grillad kycklingfilé, lammfilé och kungsräkor, serveras med paprika och lök i en varm rykande järnform - separat sås</p>
+                                <br />
+                                <p>199 :-</p>
+
+                                <br />
+
+                                <hr />
+
+                                <h2>- Milda rätter -</h2>
+
+                                <hr />
+                                
+                                <h3>Korma</h3>
+                                <p>Välj mellan kyckling / vitlöksmarinerad kyckling / lamm / kungsräkor i en gryta tillagad med grädde, russin, kokos och cashewnötter (passar för barn)</p>
+                                <br />
+                                <p>129 / 139 / 169 / 179  :-</p>
+
+                                <br />
+
+                                <h3>Kyckling Trivandrum</h3>
+                                <p>Vitlöksmarinerad grillad kycklingfilé med blomkål tillagad i cashewnötter och kokossås (passar för barn)</p>
+                                <br />
+                                <p>139 :-</p>
+
+                                <br />
+
+                                <h3>Tikka Butter Masala</h3>
+                                <p>Välj mellan grillad kyckling / vitlökskyckling / lamm / kungsräkor tillagade med nötter, smör och tomatsås (passar för barn)</p>
+                                <br />
+                                <p>129 / 139 / 169 / 179 :-</p>
+
+                                <br />
+
+                                <h3>Vitlökskyckling Tikka Masala</h3>
+                                <p>Vitlöksmarinerad kycklingfilé, grillad i ugn med smör, grädde och nötter i tomatsås</p>
+                                <br />
+                                <p>139 :-</p>
+
+                                <br />
+
+                                <h3>Honung- och mangokyckling</h3>
+                                <p>Kycklingfilé och mangobitar i tikkasås och honung (passar för barn)</p>
+                                <br />
+                                <p>139 :-</p>
+
+                                <br />
+
+                                <h3>Makhani</h3>
+                                <p>Välj mellan kycklingfilé / biff / lamm / räkor i gryta tillagad med vitlök, grädde, jordnötter och cashewnötter i mustig sås</p>
+                                <br />
+                                <p>129 / 149 / 159 / 139 :-</p>
+
+                                <br />
+
+                                <hr />
+
+                                <h2>- Mellanstarka rätter -</h2>
+
+                                <hr />
+
+                                <h3>Curry</h3>
+                                <p>Välj mellan kyckling / biff / lamm / kungsräkor i traditionell indisk currysås</p>
+                                <br />
+                                <p>119 / 139 / 159 / 179 :-</p>
+
+                                <br />
+
+                                <h3>Rogan Josh</h3>
+                                <p>Välj mellan kyckling / biff / lamm / räkor. Populär aromatisk nordindisk gryta med vitlök, lök, tomat, indiska örter och färsk koriander</p>
+                                <br />
+                                <p>129 / 149 / 159 / 139 :-</p>
+
+                                <br />
+
+                                <h3>Palak Gosht</h3>
+                                <p>Välj mellan kyckling / biff / lamm / räkor. Indisk maträtt med stekt spenat i en smakrik sås av ingefära, vitlök och tomat</p>
+                                <br />
+                                <p>129 / 149 / 159 / 139 :-</p>
+
+                                <br />
+
+                                <h3>Balti</h3>
+                                <p>Välj mellan kyckling / biff / lamm / kungsräkor. Tillagas med jordnötter, cashewnötter, lök, tomat, färska örter, ingefära och grädde. Smakrik och med härliga dofter och färger. En delikatess från norra indien.</p>
+                                <br />
+                                <p>139 / 149 / 159 / 179 :-</p>
+
+                                <br />
+
+                                <h3>Badam Jalfrezi</h3>
+                                <p>Kyckling / biff / lamm / kungsräkor i en mellanstark gryta med stekt lök och cashewnötter</p>
+                                <br />
+                                <p>139 / 149 / 159 / 179 :-</p>
+
+                                <br />
+
+                                <h3>Gosht Gryta</h3>
+                                <p>Kyckling / biff / lamm i currygryta med blandade grönsaker</p>
+                                <br />
+                                <p>129 / 149 / 159 :-</p>
+
+                                <br />
+
+                                <h3>Dal Gost</h3>
+                                <p>Välj mellan kyckling / biff / lamm / räkor. Tillagas med gula linser, limeblad, citronsaft och kockens speciella kryddblandning</p>
+                                <br />
+                                <p>139 / 149 / 159 / 139 :-</p>
+
+                                <br />
+
+                                <h3>Shahi Korma</h3>
+                                <p>Kycklingfilé marinerad med tikka masala som tillagas i en grytbas av grädde, tomatsås, ingefära och mandlar</p>
+                                <br />
+                                <p>129 :-</p>
+
+                                <br />
+
+                                <hr />
+
+                                <h2>- Starka rätter -</h2>
+
+                                <hr />
+
+                                <h3>Karahi</h3>
+                                <p>Välj mellan grillad kyckling / friterad biff / lamm / kungsräkor. Tillagad med paprika, lök och kokos i koraisås som serveras i varm järnskål</p>
+                                <br />
+                                <p>149 / 159 / 169 / 179 :-</p>
+
+                                <br />
+
+                                <h3>Bhuna</h3>
+                                <p>Välj mellan kyckling / biff / lamm / laxfilé tillagad med stekt lök och paprika i bhunasås</p>
+                                <br />
+                                <p>129 / 159 / 169 / 179 :-</p>
+
+                                <br />
+
+                                <h3>Madras</h3>
+                                <p>Välj mellan sydindisk kyckling / biff / lamm eller räkor i en gryta med kokos och indiska kryddor i madrassås</p>
+                                <br />
+                                <p>139 / 149 / 169 / 139 :-</p>
+
+                                <br />
+
+                                <h3>Vindaloo</h3>
+                                <p>Välj mellan kyckling / biff / lamm / kungsräkor. Rejält kryddad gryta från södra indien av ingefära, vitlök och tomat</p>
+                                <br />
+                                <p>159 / 169 / 179 / 189 :-</p>
+
+                                <br />
+
+                                <hr />
+
+                                <h2>- Biriyanirätter -</h2>
+
+                                <hr />
+
+                                <h3>Biriyani</h3>
+                                <p>Välj mellan kycklingfilébitar / lamm / räkor blandade med smörstekt basmatiris, indiska örter, garneras med rostad lök och serveras med vitlökssås och mangosås</p>
+                                <br />
+                                <p>129 / 160 / 150 :-</p>
+
+                                <br />
+
+                                <hr />
+
+                                <h2>- Vegetariska rätter -</h2>
+
+                                <hr />
+
+                                <h3>Panir Masala (mellanstark)</h3>
+                                <p>Tillagad med egen färskost, kokos, mandel, cashewnötter och jordnötter. Serveras med tandoori-masalasås</p>
+                                <br />
+                                <p>139 :-</p>
+
+                                <br />
+
+                                <h3>Panir korai (stark)</h3>
+                                <p>Tillagad med hemlagad färskost, färsk vitlök, lök, paprika, tomat, indiska kryddor och färsk koriander </p>
+                                <br />
+                                <p>139 :-</p>
+
+                                <br />
+
+                                <h3>Palak panir (mild)</h3>
+                                <p>Veganskt smör, fräst spenat med vitlök, kokos, nötter, mandel, grädde och hemgjord ost</p>
+                                <br />
+                                <p>139 :-</p>
+
+                                <br />
+
+                                <hr />
+
+                                <h2>- Veganska rätter -</h2>
+
+                                <hr />
+
+                                <h3>Korma vegansk (mild)</h3>
+                                <p>Tillagas med indiska kryddor, nötter, kokos, mandel, och kokosgrädde. En delikatess från Punjab.</p>
+                                <br />
+                                <p>129 :-</p>
+
+                                <br />
+
+                                <h3>Rogan josh vegansk (mellanstark)</h3>
+                                <p> Nordindisk gryta med vitlök, lök, tomat, indiska örter och färsk koriander. </p>
+                                <br />
+                                <p>139 :-</p>
+
+                                <br />
+
+                                <h3>Vindaloo vegansk (mycket stark)</h3>
+                                <p>Rejält kryddat rätt tillagad med färsk vitlök, lök, paprika, tomat, indiska kryddor och färsk koriander.</p>
+                                <br />
+                                <p>139 :-</p>
+
+                                <br />
+
+                                <h3>Korai vegansk (stark)</h3>
+                                <p>Tillagad med färsk vitlök, lök, paprika, tomat, indiska kryddor och färsk koriander.</p>
+                                <br />
+                                <p>129 :-</p>
+
+                                <br />
+
+                                <h3>Sag dall vegansk (mellanstark)</h3>
+                                <p>Traditionell indisk maträtt med hög proteinhalt. Tillagad med linser, stekt spenat, tomat, lök, vitlök och färsk koriander</p>
+                                <br />
+                                <p>129 :-</p>
+
+                                <br />
+
+                                <h3>Palak panir vegansk (mild)</h3>
+                                <p>Stekt spenat med vitlök, kokos, nötter, mandel, tofu och kokosgrädde</p>
+                                <br />
+                                <p>139 :-</p>
+
+                                <br />
+
+                                <h3>Sag Aloo vegansk (mild)</h3>
+                                <p>Nordindisk rätt med kokt potatis och spenat</p>
+                                <br />
+                                <p>125 :-</p>
+
+                                <br />
+
+                                <h3>Biryani vegansk (mellanstark)</h3>
+                                <p>Stekt basmatiris tillagas med olika grönsaker. Serveras med mango och sweet chilisås.</p>
+                                <br />
+                                <p>139 :-</p>
+
+                                <br />
+
+                                <h3>Tikka masala vegansk (lite stark)</h3>
+                                <p>Grönsaker tillagade med mandel, kokosgrädde och nötter i tomatsås</p>
+                                <br />
+                                <p>145 :-</p>
+
+                                <br />
+
+                                <hr />
+
+                                <h2>- Barnmeny -</h2>
+
+                                <hr />
+
+                                <h3>Tandoori kycklingklubbor</h3>
+                                <p>Innehåller spår av mandel, nötter och senap</p>
+                                <br />
+                                <p>69 :-</p>
+
+                                <br />
+
+                                <h3>Kyckling Nuggets</h3>
+                                <p>4 st Kyckling Nuggets med sallad och pommes</p>
+                                <br />
+                                <p>69 :-</p>
+
+                                <br />
+
+                                <h3>Kycklingfilé</h3>
+                                <p>Serveras med sallad och pommes</p>
+                                <br />
+                                <p>69 :-</p>
+
+                                <br />
+
+                                <h3>Kyckling korma (mild)</h3>
+                                <p>Grillad kycklingfilé med smörfrästa smakrika kryddor, kokos, mandel, jordnötter, cashewnötter, russin och grädde. En delikatess från Punjab</p>
+                                <br />
+                                <p>75 :-</p>
+
+                                <br />
+
+                                <h3>Tikka Masala (mellanstark)</h3>
+                                <p>Välj mellan kycklingfilé / grillad vitlöksmarinerad kycklingfilé / grillad lammfile / jätteräkor. Tillagas med kokos, mandel, och kryddor. Serveras med hemgjord smakrik tandoori-masalasås. Kan innehålla spår av nötter och senap</p>
+                                <br />
+                                <p>75 / 85 / 90 / 95 :-</p>
+
+                                <br />
+
+                                <h3>Pannkakor</h3>
+                                <p>2 st pannkakor med sylt och grädde (socker)</p>
+                                <br />
+                                <p>69 :-</p>
+
+                                <br />
+
+                                <hr />
+
+                                <h2>- Taste Of India specials -</h2>
+
+                                <hr />
+
+                                <h3>MIX Tikka Masala (mellanstark)</h3>
+                                <p>Välj mellan grillad kycklingfilé / vitlöksmarinerad kycklingfilé / lamm / kungsräkor. Tillagas med kokos, mandel och kryddor. Serveras med hemgjord smakrik tandoori-masalasås. Kan innehålla spår av nötter och senap</p>
+                                <br />
+                                <p>179 :-</p>
+
+                                <br />
+
+                                <h3>MIX Balti (mellanstark)</h3>
+                                <p>Grillad kycklingfilé, grillad vitlöksmarinerad kyckling, lamm och kungsräkor. Tillagas med jordnötter, cashewnötter, lök, tomat, färska örter, ingefära och grädde. Smakrik och med härliga dofter och färger. En delikatess från norra Indien</p>
+                                <br />
+                                <p>179 :-</p>
+
+                                <br />
+
+                                <h3>MIX Korai (stark)</h3>
+                                <p>Grillad kycklingfilé, grillad vitlöksmarinerad kyckling, lamm och kungsräkor. Korai tillagas i en speciell järnform under stark värme. Tillagad med färsk vitlök, lök, paprika, tomat och indiska kryddor. Innehåller spår av nötter, mandel</p>
+                                <br />
+                                <p>179 :-</p>
+
+                                <br />
+
+                                <hr />
+
+                                <h2>Efterätter</h2>
+
+                                <hr />
+
+                                <h3>Mango Lassi</h3>
+                                <p></p>
+                                <br />
+                                <p>39 :-</p>
+
+                                <br />
+
+                                <h3>Mango Kulfi</h3>
+                                <p>Hemgjord indisk glass tillagad med mango, kokos, mandel och grädde</p>
+                                <br />
+                                <p>49 :-</p>
+
+                                <br />
+
+                                <h3>Vaniljglass</h3>
+                                <p>Serveras med chokladsås / kolasås</p>
+                                <br />
+                                <p>49 :-</p>
+
+                                <br />
+
+                                <hr />
+
+                                <h2>- Bröd -</h2>
+
+                                <hr />
+
+                                <p class = "bread">Naan naturell (lerugnsbakat bröd)</p>
+                                
+                                <p class = "price">25 :-</p>
+
+                                <br />
+
+                                <p class = "bread">Vitlöks naan (lerugnsbakat bröd)</p>
+                                
+                                <p class = "price">30 :-</p>
+
+                                <br />
+
+                                <p class = "bread">Ost naan (lerugnsbakat bröd)</p>
+                                
+                                <p class = "price">35 :-</p>
+
+                                <br />
+
+                                <p class = "bread">Peshwari naan</p> <p class = "bread">(lerugnsbakat bröd inbakat med kokos, mandel, socker och grädde)</p>
+                                
+                                <p class = "price">45 :-</p>
+
+                                <br />
+
+                                <hr />
+
+                                <h2>- Veganskt bröd -</h2>
+
+                                <hr />
+
+                                <p class = "bread">Veganskt naanbröd naturell</p>
+                            
+                                <p class = "price"> 25 :-</p>
+
+                                <br />
+
+                                <p class = "bread">Veganskt naanbröd vitlök</p>
+                                
+                                <p class = "price">30 :-</p>
+
+                                <br />
+
+                                <p class = "bread">Veganskt naanbröd Peshwari</p> <p class = "bread">(bröd inbakat med kokos, mandel, kokosgrädde. Söt smak)</p>
+                                
+                                <p class = "price">45 :-</p>
+
+                                <br />
+
+                        
+                            </div>
+
+                            
+
+                        </div>
+
+                        <hr />
+
+                    </section> <!-- Section menySec ends-->
+
+                    <!-- <hr /> ***This doesn't show up, but the one I put just before the end of "menySec" does...***-->
+
+                </section> <!--Section "menyOptionsSec" ends--> 
+
+                    <section id = "oppSec" class = "contentSec">
+                        <div class = "oppet">
+
+                            <h1>Öppettider</h1>
+
+                            <p><b>Tis - Tors:</b></p> <p class = "time"><b>15:30 - 21:00</b></p>
+                            <br />
+                            <p><b>Fre: 15:30 - 22:00</b></p>
+                            <br />
+                            <p><b>Lör: 13:00 - 22:00</b></p>
+                            <br />
+                            <p><b>Sön: 13:00 - 21:00</b></p>
+                            <br />
+                            <p><b>Mån: Stängt</b></p>
+                            <br />
+
+                        </div>
+
+                        <hr />
+
+                    </section> <!--Section oppSec ends-->
+
+                 
+        
+                <section id = "kontaktSec">
+
+                    <div class = "kontakt">
+                        <h1>Kontakt</h1>
+                        
+                        <h4><b>Du hittar oss på:</b></h4>
+                        <script>
+      function initMap() {
+        var myLatLng = {lat: 59.878574, lng: 17.618539};
+
+        // Create a map object and specify the DOM element
+        // for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 4
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: 'Taste of India'
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=mymap-207811&callback=initMap"
+        async defer></script>
+
+                        <p><b>Tunagatan 33, 753 37 Uppsala</b></p>
+                        <h4><b>Telefon: </b></h4>
+                        <p><b>018 24 80 36</b></p>
+                        
+                        <!--
+                        <h4>Email: </h4>
+                        <p id = "kontaktPLast">example@examlpe.com</p> 
+                        -->
+                      
+                        <div class = "socialMediaDiv">
+                            <a href = "https://www.facebook.com/tasteofindiauppsala/" target = "_blank"><img class = "smallImage" alt = "Facebook" src = "./images/fb.png"></a>
+                            <a href = "https://www.instagram.com/tasteofindiauppsala/?hl=sv" target = "_blank"><img class = "smallImage" alt = "Instagram" src = "./images/insta.png"></a>
+                        </div>
+ <!--
+                        <div class = "socialMediaDiv"> 
+                                                    </div>
+                                                    -->
+    
+
+                    </div>
+
+                   
+                </section>
+
+
+        </div>
+
+       
+
+    </section> <!--Section "homeSec" ends here-->
+
+</body>
+
+</html>

@@ -1,0 +1,566 @@
+/*** Start of general css ***/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+   /* font-size: px; */
+  /*  height: 500px;
+  Don't know what the height should be */
+}
+
+section {
+    float: left;
+    width: 100%;
+    
+}
+
+a {
+    display: inline-block;
+}
+
+a:hover {
+    color: #993300;
+}
+
+p {
+    display: inline-block;
+}
+
+/*
+.headerNavWrapper {
+    position: fixed;
+    top: 0; 
+}*/
+
+.header {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000000;
+    padding: 15px;
+    float: left; 
+}
+
+.header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
+.price {
+    float: right;
+}
+
+.bread {
+    float: left;
+} */
+
+/*** End of general css ***/
+
+
+
+/******************************
+*** Start of css for mobile ***
+*******************************/
+
+/*
+.desktopHeaderNavbar {
+    display: none;
+} 
+*** NOT USING ".desktopHeaderNavbar" ***
+*/
+
+#logo {
+    width: 50%; /*I think this is what makes the logo stay in the right place and be the right size*/
+    height: auto;
+   /* This doesnt seem to do anything (was trying to center the image): 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    */
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #000000;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+
+.menyOptionsNav {
+    color: #C5B358;
+    margin: 0 0 0 0;
+    width: 100%;
+    border: 1px solid #C5B358;
+    /*
+    display: block;
+    padding: 10px; */
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+    /* Does this do anything??? */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navBarLi {
+    float: left;
+    width: auto;
+    
+} /* When I set width to 33%, it still looks like the 
+links are a bit more to the right (not entirely centered. 
+Why?*/
+
+/*
+.navBarSpacingDivs {
+    
+    float: left;
+    display: block;
+} 
+***Don't know if to use this***
+*/
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #999999;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+  }
+
+#navbar a:hover {
+    background-color: #000000;
+    color: #C5B358;
+  }
+
+  /* #navbar a.active {
+    background-color: ;
+    color: ;
+  } */
+
+.content {
+    padding: 16px;
+    font-family: 'Roboto Slab', serif;
+  }
+
+.landscapeDishImg {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+#dish1 {
+    margin: 0 0 0 0;
+}
+ 
+#dish3 {
+    margin: 0 0 0 0;
+} /*This doesn't change anything*/
+
+ /*
+.verticalDishImg {
+    width: 50%;
+    height: auto;
+    float: left;
+    margin: 0;
+} *** Vertical images commented out in the index file for now. They're not aligning properly ***/
+
+/*
+.menyOptionsNav {
+    width: 100%;
+} *** Does nothing ***/
+
+.menyOptionsNav {
+    margin: 0 0 0 0;
+}
+
+.menyOptionsNav h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10%;
+    /*
+    text-decoration: underline;
+    text-decoration-style:solid;
+    */
+}
+
+.menyOptionsUl {
+    color: #C5B358;
+}
+
+.menyOptionsLi {
+    float: left;
+    width: 50%;
+    
+} /* When I set width to 33%, it still looks like the 
+links are a bit more to the right (not entirely centered. 
+Why?*/
+
+.menyOptionsLi a {
+    display: block;
+    padding: 10px 16px;
+    margin: 0 15% 0 15%;
+    color: #999999;
+    text-decoration: none;
+    /*
+    border-bottom: 1px solid #C5B358;
+    border-top: 1px solid #C5B358; */
+}
+
+.menyOptionsLi a:hover {
+    background-color: #000000;
+    color: #C5B358;
+}
+
+#avhamntningA {
+   /* border-right: 0.5px solid #C5B358; */
+    text-align: right;
+}
+
+#aLaCarteA {
+   /* border-left: 0.5px solid #C5B358; */
+    text-align: left;
+}
+
+#menySec h1 {
+    font-size: 25px;
+    /*
+    text-decoration: underline;
+    text-decoration-style:solid; */
+}
+
+.meny {
+    color: #C5B358;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+/*
+#avhamntningSpaceDiv {
+    width: 100%;
+    height: 100%;
+}
+*/
+
+#avhamntningMenyDiv {
+    margin: 0 0 0 0;
+    border:  1px solid #C5B358;
+    padding: 15%;
+}
+ /*
+#avhamntningSpaceDiv {
+    margin: 20% 0 0 0;
+} */
+
+#aLaCarteMenyDiv {
+    margin: 0 0 0 0;
+    border:  1px solid #C5B358;
+    padding: 15%;
+}
+
+.oppet {
+    color: #C5B358;
+    margin: 0 0 0 0;
+    border: 1px solid #C5B358;
+    padding: 15%;
+}
+
+.oppet h1 {
+text-align: center;
+margin-top: 0;
+}
+
+.oppet p {
+    text-align: left;
+}
+ /*
+.time {
+    float: right;
+}
+*/
+
+#oppSec h1 {
+    font-size: 25px;
+    /*
+    text-decoration: underline;
+    text-decoration-style:solid;
+    */
+}
+
+.kontakt {
+    margin: 0 0 25% 0;
+    border: 1px solid #C5B358;
+    padding: 15%;
+}
+
+.kontakt h1 {
+    margin-top: auto;
+}
+
+.kontakt h4 {
+    margin-bottom: 0;
+    color: #999999;
+}
+
+.kontakt p {
+    margin-top: 0;
+}
+
+#kontaktPLast {
+    margin-bottom: 85%;
+}
+
+#kontaktSec {
+    color: #C5B358;
+    text-align: center;
+}
+
+#kontaktSec h1 {
+    font-size: 25px;
+    /*
+    text-decoration: underline;
+    text-decoration-style:solid;
+    */
+}
+
+.socialMediaDiv {
+    width: 100%;
+    
+}
+
+.socialMediaDiv a {
+    width: 50%;
+}
+
+.smallImage {
+    width: 17%;
+    height: auto;
+  /*  margin: 5%; */
+}
+
+hr {
+    color: #999999;
+    background-color: #999999;
+    border-color: #999999;
+    margin: 20px;
+}
+
+p {
+    color: #999999;
+    font-size: 16px;
+}
+
+h1 {
+  /*  font-family: 'EB Garamond', serif; 
+    font-family: 'Parisienne', cursive; */
+    font-family: 'Roboto Slab', serif;
+}
+
+#avhamntningMenyDiv p  {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* ***This didn't work:***
+#avhamntningMenyDiv p:last-child {
+    margin-top: 0;
+    margin-bottom: 20%;
+}*/
+
+#aLaCarteMenyDiv p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#avhamntningMenyDiv h3 {
+    margin-bottom: 0;
+}
+
+#aLaCarteMenyDiv h3 {
+    margin-bottom: 0;
+}
+
+#aLaCarteMenyDiv h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    /*
+    text-decoration: underline;
+    text-decoration-style:solid;
+    */
+}
+
+#avhamntningMenyDiv h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    /*
+    text-decoration: underline;
+    text-decoration-style:solid;
+    */
+}
+
+/*
+.yellowP {
+    color: #C5B358;
+}
+*/
+
+h3 {
+    font-size: 18px;
+    
+}
+
+h2 {
+    font-size: 22px;
+    /* color: #990000;
+    text-decoration: underline;
+    text-decoration-style:solid;
+    color: #999999; */
+
+}
+
+#tandooriHeadline {
+    margin-bottom: 0;
+}
+
+#indiskaGrillratter {
+    margin-top: 0;
+}
+
+/*
+#tandooriDiv hr {
+    color: #333333;
+    background-color: #333333;
+    border-color: #333333;
+}
+*/
+
+/*
+.marginBottom0 {
+    margin-bottom: 0;
+}
+.marginTop0 {
+    margin-top: 0;
+}
+*/
+/* 
+ class = "marginTop0" 
+ class = "marginBottom0" 
+*/
+
+/*
+h3, p {
+    margin: 0;
+ } 
+ 
+ *** Above is one possible solution to the "space between h3 and p problem".
+ Could make a class instead in order to not effect ALL h1 and p.***
+ */
+
+/* p {
+    line-height: 0px;
+}
+ *** Above is one PARTIAL possible solution to the "space between h3 and p problem".
+ Could make a class instead in order to not effect ALL p.***
+ */
+
+/* hr {
+    color: #C5B358;
+    background-color: #C5B358;
+    height: 1px;
+    border-color: #C5B358;
+} This just won't happen... Doesn't apper at all */
+
+
+/*** End of css for mobile ***/
+
+
+
+/*** Start of css for desktop (anything bigger than phone ***/
+@media only screen and (min-width: 600px) {
+  /* Kept the line below as an example of how this is done:
+    .col-1 {width: 8.33%;}
+    */
+
+        .content {
+          /*  margin: 20px 20px 20px 20px; */
+          margin: 27%;
+        }
+ 
+        /*
+        .desktopHeaderNavbar {
+            display: block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 37.5%;
+            height: auto;
+            text-align: center;
+        }
+        .desktopHeaderNavbar ul {
+            
+        }
+
+        .desktopHeaderNavbar li {
+            float: left;
+            width: auto;
+            
+        }
+        .desktopHeaderNavbar li a {
+        text-decoration: none;
+        padding: 10px 16px;
+        height: auto;
+        }
+        *** NOT USING ".desktopHeaderNavbar" ***
+        */
+
+        #logo {
+            width: 25%;
+            height: auto;
+        }
+
+        #navbar {
+
+        }
+
+        #navbar li {
+            width: 25%;
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+
+        #navbar a {
+            font-size: 20px;
+        }
+        .landscapeDishImg {
+            width: 50%;
+            height: auto;
+            float: left;
+        }
+        #kontaktPLast {
+            margin-bottom: auto;
+        }
+   }
+
+@media only screen and (min-width: 768px) {
+    
+}
+/*** End of css for desktop ***/
+
